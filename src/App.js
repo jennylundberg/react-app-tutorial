@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tweet from "./Tweet";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Tweet name="Jenny" message="This is a random tweet"></Tweet>
+      <Tweet name="Alwin" message="Carpe Diem"></Tweet>
+      <Tweet name="Axel" message="Bananaaaas!"></Tweet>
+      <Tweet name="Lina" message="I Like Trains"></Tweet>
     </div>
   );
 }
